@@ -139,14 +139,14 @@ axios.interceptors.request.use(
       });
     //console.log(rowsArray);
   }
-  document.querySelector(".arrow__up").addEventListener("click", function () {
+  document.querySelector(".arrowUp").addEventListener("click", function () {
     window.scrollTo({
       top: 0,
       behavior: "smooth"
     });
   });
   
-  document.querySelector(".arrow__down").addEventListener("click", function () {
+  document.querySelector(".arrowDown").addEventListener("click", function () {
     window.scrollTo({
       top: document.body.scrollHeight,
       behavior: "smooth"

@@ -79,17 +79,24 @@
   .container .statistics .global {
     position: relative;
   }
+  .container .statistics .cases{
+    background-color:#65737e;
+    border-radius: .3rem;
+  }
   .container .statistics .globalTitle {
     margin: 15px 0px;
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     color: #FFFFFF;
     background-color:#65737e;
     border-radius: .3rem;
+    font-family: 'Heebo', sans-serif;
+
 
     
   }
   .container .statistics .globalCases {
+      padding: 10px;
     margin: 15px 15px 0 0;
     display: inline-block;
     align-items: flex-start;
@@ -102,11 +109,11 @@
   .container .statistics .globalCases h2 {
     color: #f0f0f0;
 
-    
   }
   
   .container .statistics .globalDeaths {
-    margin: 15px 15px 15px 15px;
+    margin: 15px 15px 0 0;
+    padding: 10px;
     display: inline-block;
     
   }
@@ -121,6 +128,7 @@
   }
   .container .statistics .globalRecovered {
     margin: 15px 15px 0 0;
+    padding: 10px;
     display: inline-block;
   }
   @media screen and (max-width: 576px) {
@@ -135,7 +143,7 @@
     margin: 15px 0;
     width: 450px;
     display: inline-block;
-    background-color: #c0c5ce;
+    background-color: #FFFFFF;
     color: #090909;
     padding: 9px 15px;
     font-size: 18px;
@@ -150,7 +158,7 @@
     margin: 15px 0;
     width: 250px;
     display: inline-block;
-    background-color: #c0c5ce;
+    background-color: #FFFFFF;
     color: #4f5b66;
     padding: 9px 15px;
     font-size: 18px;
@@ -186,6 +194,7 @@
   }
   .container .statistics .table > thead > tr > th {
     text-align: left;
+    color: #FFFFFF;
     font-size: 22px;
   }
   .container .statistics .table > thead > tr > th:not(:first-child) {
@@ -248,7 +257,7 @@
     right: 0;
     bottom: 0;
   }
-  .container .arrow__up {
+  .container .arrowUp {
     position: relative;
     cursor: pointer;
     background-color: rgba(155, 155, 155, 0.5);
@@ -257,18 +266,24 @@
     border-radius: 5px;
     margin: 0 25px 3px 0;
   }
-  .container .arrow__up::before {
+  .container .arrowUp::before {
     content: "";
     position: absolute;
     border-top: solid 4px #f0f0f0;
     border-right: solid 4px #f0f0f0;
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     left: 10px;
     top: 14px;
     transform: rotate(-45deg);
   }
-  .container .arrow__down {
+  .container .arrowUp:hover{
+    background-color: #a7adba;
+  }
+  .container .arrowDown:hover{
+    background-color:#a7adba;
+  }
+  .container .arrowDown {
     position: relative;
     cursor: pointer;
     background-color: rgba(155, 155, 155, 0.5);
@@ -277,13 +292,13 @@
     border-radius: 5px;
     margin: 0 25px 25px 0;
   }
-  .container .arrow__down::before {
+  .container .arrowDown::before {
     content: "";
     position: absolute;
     border-top: solid 4px #f0f0f0;
     border-right: solid 4px #f0f0f0;
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     left: 10px;
     bottom: 10px;
     transform: rotate(135deg);

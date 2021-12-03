@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="Covid19Tracker.css">
    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=PT+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600&family=Nunito+Sans:wght@200&family=PT+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -19,31 +20,33 @@
 <div class="container">
   <div class="statistics">
     <div class="global">
-      <div class="globalTitle">Covid-19 Tracker</div>
+      <div class="globalTitle">COVID-19 Tracker</div>
+      <div class="cases">
             <div class="globalCases">
                  <h2></h2>
                      <h3>Total Cases Worldwide</h3>
-                     <br>
+                
              </div>
         <div class="globalDeaths">
                  <h2></h2>
                      <h3>Total Deaths Worldwide</h3>
-                     <br>
+                   
          </div>
         <div class="globalRecovered">
                   <h2></h2>
                   <h3>Total Recovered Worldwide</h3>
-                  <br>
+                  
          </div>
-  
+        </div>
+        <br>
          <hr>
     </div>
     <input type="text" id="search" name="country" placeholder="Search Countries">
         <select class="custom-select" id="select" onchange="changeOrder()">
             <option selected="" disabled="">Sort By</option>
-            <option value="cases">Total Cases </option>
-            <option value="deaths">Total Deaths </option>
-            <option value="recovered">Total Recoveries </option>
+            <option value="cases">Total Cases</option>
+            <option value="deaths">Total Deaths</option>
+            <option value="recovered">Total Recoveries</option>
          </select>
     <table class="table">
       <thead>
@@ -59,9 +62,9 @@
     </table>
   </div>
   <div class="arrow">
-    <div class="arrow__up">
+    <div class="arrowUp">
     </div>
-    <div class="arrow__down">
+    <div class="arrowDown">
     </div>
   </div>
 </div>
